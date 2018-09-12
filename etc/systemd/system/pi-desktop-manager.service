@@ -1,0 +1,10 @@
+[Unit]
+Description=Pi-Desktop power on/off manager
+After=local-fs.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/pi-desktop-manager
+
+[Install]
+WantedBy=multi-user.target
